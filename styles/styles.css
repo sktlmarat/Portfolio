@@ -1,0 +1,56 @@
+body {
+  font-family: "Source Code Pro", monospace;
+  color: white;
+  background-color: #0f0c29;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0f0c29), color-stop(#302b63), to(#24243e));
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-section {
+  height: 80vh;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hero-card h4 {
+  font-size: 24px;
+  line-height: 1.7;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+.hero-card a {
+  margin-top: 20px;
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hi-emoji {
+  width: 45px;
+  height: auto;
+  margin-top: -15px;
+}
+
+.hi {
+  font-size: 40px;
+}
+
+.hero-img {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-img img {
+  height: 100%;
+  width: auto;
+}
+/*# sourceMappingURL=styles.css.map */

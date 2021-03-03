@@ -1,0 +1,61 @@
+$bg-color: #0f0c29;
+$bg-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+$text-color: white;
+$font:'Source Code Pro',
+monospace;
+
+body {
+    font-family: $font;
+    color: $text-color;
+    background-color: $bg-color;
+    background-image: $bg-image;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-section {
+    height: 80vh;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    h4 {
+        font-size: 24px;
+        line-height: 1.7;
+        margin-bottom: 0px;
+        padding-left: 10px;
+    }
+
+    a {
+        margin-top: 20px;
+        padding: 10px 0px;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.hi-emoji {
+    width: 45px;
+    height: auto;
+    margin-top: -15px;
+}
+
+.hi {
+    font-size: 40px;
+}
+
+.hero-img {
+    height: 100%;
+    overflow: hidden;
+
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
