@@ -2,8 +2,8 @@ body {
   font-family: "Source Code Pro", monospace;
   color: white;
   background-color: #0f0c29;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0f0c29), color-stop(#302b63), to(#24243e));
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#200122), to(#181e3b));
+  background-image: linear-gradient(to bottom, #200122, #181e3b);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -13,11 +13,13 @@ body {
 }
 
 .hero-card {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.37);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(201, 199, 199, 0.18);
 }
 
 .hero-card h4 {
@@ -46,7 +48,6 @@ body {
 
 .hero-img {
   height: 100%;
-  overflow: hidden;
 }
 
 .hero-img img {

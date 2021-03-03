@@ -1,5 +1,5 @@
 $bg-color: #0f0c29;
-$bg-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+$bg-image: linear-gradient(to bottom, #200122, #181e3b); ;
 $text-color: white;
 $font:'Source Code Pro',
 monospace;
@@ -13,16 +13,20 @@ body {
     background-attachment: fixed;
 }
 
+.navbar{
+
+}
 .hero-section {
     height: 80vh;
 }
 
 .hero-card {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5.0px);
     -webkit-backdrop-filter: blur(5.0px);
+    box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.37);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(201, 199, 199, 0.18);
 
     h4 {
         font-size: 24px;
@@ -51,7 +55,7 @@ body {
 
 .hero-img {
     height: 100%;
-    overflow: hidden;
+
 
 
     img {
