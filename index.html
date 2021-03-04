@@ -31,10 +31,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#about">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#projects">My Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -55,15 +58,15 @@
         </div>
 
         <!-- ABOUT SECTION -->
-        <div class="row about-section mt-5">
+        <div class="row about-section mt-5" id="about">
             <div class="col-lg-8 offset-lg-2">
                 <div class="about-card p-4">
                     <div class="content">
-                        <h4 class="text-center about-h">😎 About Me</h4>
+                        <h4 class="text-center about-h">About Me</h4>
                         <p class="text-center">I am passionate full-stack web-developer and graduate 🧑‍🎓 of Nazarbayev
                             University with a Computer Science degree 🖥️. 4+ years of experience in the web-development
-                            🧑‍💻
-                            and programming 💡 overall.</p>
+                            🧑‍💻 and programming 💡 overall. From 2019 I've been working as a freelance web-developer.
+                        </p>
                         <h4>Area of expertise</h3>
                             <div class="languages">
                                 <span class="badge ">Laravel</span>
@@ -88,9 +91,10 @@
         </div>
 
         <!-- PROJECTS SECTION -->
-        <div class="projects mt-5">
+        <div class="projects mt-5" id="projects">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2">
+                <div class="col-lg-8 offset-lg-2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="card lms-card p-4">
                         <div class="row">
                             <h3 class="text-center mb-4"> 🔥 My Projects</h3>
@@ -101,12 +105,13 @@
                                     <span class="badge">VueJs</span>
                                     <span class="badge">MySQL</span>
                                 </div>
-                                <p>Full-stack API-driven SPA web-app built as my senior project. Fully functional LMS built for universities</p>
+                                <p>Full-stack API-driven SPA web-app built as my senior project. Fully functional LMS
+                                    built for universities</p>
                                 <button class="btn btn-primary">GitHub</button>
-                                
+
                             </div>
                             <div class="col-7 d-none d-md-block">
-                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carouselOne" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <img src="assets/sp-1.png" class="d-block w-100" alt="...">
@@ -118,13 +123,133 @@
                                             <img src="assets/sp-3.png" class="d-block w-100" alt="...">
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne"
+                                        data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOne"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-2 mt-5" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
+                    <div class="card lms-card p-4">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h3>Linktree Clone</h3>
+                                <div class="languages mb-2">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">MySQL</span>
+                                </div>
+                                <p>Clone of the linktree. Managing and displaying links and authorization. CRUD for
+                                    links and ability to customize links page.</p>
+                                <button class="btn btn-primary">GitHub</button>
+
+                            </div>
+                            <div class="col-7 d-none d-md-block">
+                                <div id="carouselTwo" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/tree-1.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/tree-2.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTwo"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-2 mt-5" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
+                    <div class="card lms-card p-4">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h3>Monica (Contributor)</h3>
+                                <div class="languages mb-2">
+                                    <span class="badge">PHP</span>
+                                    <span class="badge">Vue</span>
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">MySQL</span>
+                                </div>
+                                <p>Open-source project for managing personal relationships. Personal CRM. User-friendly
+                                    UI and tons of useful functionalities. </p>
+                                <button class="btn btn-primary">Website</button>
+                                <button class="btn btn-primary">GitHub</button>
+                            </div>
+                            <div class="col-7 d-none d-md-block">
+                                <div id="carouselThree" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/monica-1.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselThree"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTree"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-2 mt-5 mb-5" data-aos="fade-down" data-aos-offset="200"
+                    data-aos-delay="50" data-aos-duration="1000">
+                    <div class="card lms-card p-4">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h3>Old Portfolio</h3>
+                                <div class="languages mb-2">
+                                    <span class="badge">HTML</span>
+                                    <span class="badge">CSS</span>
+                                    <span class="badge">JS</span>
+                                </div>
+                                <p>Added just because I really like this portfolio and how beautiful it looks 😄. Built
+                                    with pure CSS and several js plugins for animations.</p>
+                                <button class="btn btn-primary">Website</button>
+
+                            </div>
+                            <div class="col-7 d-none d-md-block">
+                                <div id="carouselFour" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/port-1.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/port-2.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFour"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFour"
+                                        data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -137,13 +262,44 @@
         </div>
 
 
+        <!-- CONTACT ME -->
+        <div class="row mt-5 contact-section mb-5" id="contact">
+            <div class="col-md-6 offset-md-3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">
+                <div class="card contact-card p-5">
+                    <h3 class="text-center">😊 Contact Me</h3>
+                    <form>
+                        <div class="mb-2">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">I'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInput" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="exampleInput">
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleInput" class="form-label">Message</label>
+                            <textarea type="text" rows="5" class="form-control" id="exampleInput"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
 
-
-
-
-
-
+        </div>
     </div>
+
+
+
+
+
+
+
+
+
 
 
 
