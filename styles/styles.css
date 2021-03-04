@@ -42,6 +42,10 @@ body {
   margin-top: -15px;
 }
 
+.me-emoji {
+  font-size: 40px;
+}
+
 .hi {
   font-size: 40px;
 }
@@ -65,12 +69,8 @@ body {
   border: 1px solid rgba(201, 199, 199, 0.18);
 }
 
-.about-card .languages .btn {
-  background: rgba(255, 255, 255, 0.2) !important;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
-  border: 1px solid rgba(201, 199, 199, 0.18);
+.about-card .languages .badge {
+  font-size: 14px !important;
 }
 
 .about-card .btn {
