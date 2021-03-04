@@ -43,7 +43,7 @@ body {
 }
 
 .me-emoji {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .hi {
@@ -74,7 +74,58 @@ body {
 }
 
 .about-card .btn {
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.about-card .badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.about-card .about-h {
+  font-size: 32px;
+}
+
+.about-card p {
+  font-size: 19px;
+}
+
+.projects .card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.37);
   border-radius: 10px;
-  padding: 10px;
+  border: 1px solid rgba(201, 199, 199, 0.18);
+}
+
+.projects .card .badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.projects .card .btn {
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.projects .card .carousel {
+  height: 100%;
+}
+
+.projects .card .carousel-inner {
+  height: 100%;
+}
+
+.projects .card .carousel-item {
+  height: 100%;
+}
+
+.projects .card .carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */

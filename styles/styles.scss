@@ -47,9 +47,10 @@ body {
     margin-top: -15px;
 }
 
-.me-emoji{
-    font-size: 40px;
+.me-emoji {
+    font-size: 30px;
 }
+
 .hi {
     font-size: 40px;
 }
@@ -73,12 +74,58 @@ body {
 
     .languages {
         .badge {
-            font-size: 14px !important; 
+            font-size: 14px !important;
         }
     }
-    .btn{
-        border-radius: 10px;
-        padding: 10px;
+
+    .btn {
+        border-radius: 5px;
+        padding: 5px 15px;
     }
 
+    .badge {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+
+    .about-h {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+}
+
+.projects {
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5.0px);
+        -webkit-backdrop-filter: blur(5.0px);
+        box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.37);
+        border-radius: 10px;
+        border: 1px solid rgba(201, 199, 199, 0.18);
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        .btn{
+            border-radius: 5px;
+            padding: 5px 15px;
+        }
+        .carousel{
+            height: 100%;
+        }
+        .carousel-inner{
+            height: 100%;
+        }
+        .carousel-item{
+            height: 100%;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
