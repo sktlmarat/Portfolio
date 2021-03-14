@@ -5,9 +5,10 @@ $text-color: white;
 $font:'Source Code Pro',
 monospace;
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: $font;
     color: $text-color;
@@ -15,6 +16,55 @@ body {
     background-image: $bg-image;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.spinner-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.spinner {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, #ff00cc 0%,#333399 100% );
+    animation: spin .5s infinite linear;
+}
+.spinner:after {
+    width: 90%;
+    height: 90%;
+    background-color: #151515;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
 }
 
 .hero-section {
@@ -103,6 +153,7 @@ body {
 
 .projects {
     margin-top: 8% !important;
+
     .card {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(5.0px);
@@ -123,6 +174,7 @@ body {
 
         .carousel {
             height: 100%;
+            overflow: hidden;
         }
 
         .carousel-inner {
@@ -133,7 +185,6 @@ body {
             height: 100%;
 
             img {
-                height: 100%;
                 object-fit: cover;
                 border-radius: 10px;
             }
@@ -142,7 +193,7 @@ body {
 }
 
 .contact-section {
-    .card{
+    .card {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(5.0px);
         -webkit-backdrop-filter: blur(5.0px);
@@ -150,6 +201,7 @@ body {
         border-radius: 10px;
         border: 1px solid rgba(201, 199, 199, 0.18);
     }
+
     h3 {
         font-size: 32px;
     }
@@ -169,6 +221,7 @@ body {
             color: white;
         }
     }
+
     .btn {
         padding: 10px 0px;
         width: 100%;

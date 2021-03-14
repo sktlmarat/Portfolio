@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION['mail'])):
+?>
+<script>
+    alert('Your message has been sent successfully!');
+</script>
+<?php 
+session_destroy();
+endif; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,16 +16,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="icon" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Portfolio</title>
+    <title>Portfolio | Home</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class='spinner-wrapper'>
+        <div class="spinner"></div>
+    </div>
+    <div class="container" id="page-wrapper">
 
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mt-3">
@@ -31,13 +45,17 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About Me</a>
+                            <a class="nav-link" href="https://github.com/sktlmarat" target="_blank">GitHub</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">My Projects</a>
+                            <a class="nav-link" href="mailto: sktlmarat@gmail.com">Gmail</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Me</a>
+                            <a class="nav-link" href="https://t.me/grwnuk" target="_blank">Telegram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.upwork.com/freelancers/~0137847b4e96fbb6ab"
+                                target="_blank">Upwork</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +68,7 @@
                 <div class="hero-card card p-4" id="hero-card">
                     <h3><img src="assets/hello.png" class="hi-emoji" alt=""> My name is Marat</h3>
                     <h4><span id="typed"></span></h4>
-                    <a href="" class="btn btn-primary">Contact Me</a>
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
                 </div>
             </div>
             <div class="col-md-7 hero-img p-4 d-none d-lg-block">
@@ -64,7 +82,7 @@
                     <div class="content">
                         <h4 class="text-center about-h">About Me</h4>
                         <p class="text-center">I am passionate full-stack web-developer and graduate 🧑‍🎓 of Nazarbayev
-                            University with a Computer Science degree 🖥️. 4+ years of experience in the web-development
+                            University with a Computer Science degree 🖥️. 3+ years of experience in the web-development
                             🧑‍💻 and programming 💡 overall. From 2019 I've been working as a freelance web-developer.
                         </p>
                         <h4>Area of expertise</h3>
@@ -81,9 +99,12 @@
                             </div>
                             <h4 class="mt-3">Links</h4>
                             <div class="links">
-                                <button class="btn btn-primary">Download CV</button>
-                                <button class="btn btn-primary">GitHub</button>
-                                <button class="btn btn-primary">Upwork</button>
+                                <a href="https://drive.google.com/file/d/1Ixq5jjmucORcBrZ37r3wkhLqIfqpQ6y1/view?usp=sharing"
+                                    target="_blank" class="btn btn-primary">Download CV</a>
+                                <a href="https://github.com/sktlmarat" target="_blank"
+                                    class="btn btn-primary">GitHub</a>
+                                <a href="https://www.upwork.com/freelancers/~0137847b4e96fbb6ab" target="_blank"
+                                    class="btn btn-primary">Upwork</a>
                             </div>
                     </div>
                 </div>
@@ -107,7 +128,8 @@
                                 </div>
                                 <p>Full-stack API-driven SPA web-app built as my senior project. Fully functional LMS
                                     built for universities</p>
-                                <button class="btn btn-primary">GitHub</button>
+                                <a href="https://github.com/sktlmarat/Senior-Project" target="_blank"
+                                    class="btn btn-primary">GitHub</a>
 
                             </div>
                             <div class="col-7 d-none d-md-block">
@@ -150,7 +172,8 @@
                                 </div>
                                 <p>Clone of the linktree. Managing and displaying links and authorization. CRUD for
                                     links and ability to customize links page.</p>
-                                <button class="btn btn-primary">GitHub</button>
+                                <a href="https://github.com/sktlmarat/Laravel-linktree" target="_blank"
+                                    class="btn btn-primary">GitHub</a>
 
                             </div>
                             <div class="col-7 d-none d-md-block">
@@ -192,8 +215,9 @@
                                 </div>
                                 <p>Open-source project for managing personal relationships. Personal CRM. User-friendly
                                     UI and tons of useful functionalities. </p>
-                                <button class="btn btn-primary">Website</button>
-                                <button class="btn btn-primary">GitHub</button>
+                                <a href="https://www.monicahq.com/" target="_blank" class="btn btn-primary">Website</a>
+                                <a href="https://github.com/monicahq/monica" target="_blank"
+                                    class="btn btn-primary">GitHub</a>
                             </div>
                             <div class="col-7 d-none d-md-block">
                                 <div id="carouselThree" class="carousel slide" data-bs-ride="carousel">
@@ -230,7 +254,8 @@
                                 </div>
                                 <p>Added just because I really like this portfolio and how beautiful it looks 😄. Built
                                     with pure CSS and several js plugins for animations.</p>
-                                <button class="btn btn-primary">Website</button>
+                                <a class="btn btn-primary" href="https://sharp-fermat-d1d873.netlify.app/"
+                                    target="_blank">Website</a>
 
                             </div>
                             <div class="col-7 d-none d-md-block">
@@ -268,23 +293,28 @@
                 data-aos-duration="1000">
                 <div class="card contact-card p-5">
                     <h3 class="text-center">😊 Contact Me</h3>
-                    <form>
+                    <form action="mail.php" method="post">
+                        <div class="mb-4">
+                            <label for="exampleInput" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleInput" name="name">
+                        </div>
                         <div class="mb-2">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" name="email">
                             <div id="emailHelp" class="form-text">I'll never share your email with anyone else.
                             </div>
                         </div>
                         <div class="mb-4">
                             <label for="exampleInput" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="exampleInput">
+                            <input type="text" class="form-control" id="exampleInput" name="subject">
                         </div>
                         <div class="mb-4">
                             <label for="exampleInput" class="form-label">Message</label>
-                            <textarea type="text" rows="5" class="form-control" id="exampleInput"></textarea>
+                            <textarea name="message" type="text" rows="5" class="form-control"
+                                id="exampleInput"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        <button name="sbmt" type="submit" class="btn btn-primary w-100">Submit</button>
                     </form>
                 </div>
             </div>
@@ -312,6 +342,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+        let pageWrapper = document.querySelector('#page-wrapper');
+        pageWrapper.style.display = 'none';
+        window.addEventListener('load', function () {
+            // spinnerWrapper.style.display = 'none';
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+            pageWrapper.style.display = 'block';
+        });
         var options = {
             strings: ['I am passionate full-stack web-developer <span class="me-emoji">🧑‍💻</span>'],
             typeSpeed: 60
